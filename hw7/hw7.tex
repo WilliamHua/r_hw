@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[margin=.5in]{geometry}
+\title{\vspace*{-3em}HW7}
+\author{Wil Hua}
+\date{\today}
+\begin{document}
+\maketitle
+% Chapter 6, problems 1, 5,8,10, 15, 16, 18, 27, 29, 32
+\section*{6.1}
+\begin{description}
+    \item[a)] False. Success-failure condition not met. 
+    \item[b)] True. It is not normally distributed due to the failure to meet 
+        the success-failure condition. It is right skewed because it is bounded
+        by 0, meaning that far left skew probabilities are not possible and will
+        bunch up more than in the opposite direction.
+    \item[c)] False. Z score is 1.65 which is not enough to be considered an outlier.
+    \item[d)] True. Z score is 2.32 which is enough to be considered an outlier.
+    \item[e)] False. Decreases SE by square root of 1/2 since it's standard error
+        and not variance. It scales by roots. 
+\end{description} 
+
+
+\section*{6.5}
+\begin{description}
+    \item[a)] False. We are 100\% certain that 70\% of voters in THIS SAMPLE
+        will support Prop 19 since we know the true proportion for this sample.
+    \item[b)] True, unless this is year much different from 2010 (ie 1850).
+    \item[c)] True for the year 2010
+    \item[d)] True, while maintaining everything else as equal
+    \item[e)] True for the year 2010 since the mean proportion is above 50\%
+        by a statistically significant amount.
+\end{description} 
+
+\section*{6.8}
+\begin{description}
+    \item[a)] $\sqrt{\frac{(.66*.34)}{1018}} * 1.96 = .029 ~ .03$
+    \item[b)] No, the confidence intervals at 95\% are 63 and 69, meaning
+        that greater than 69 (ie 70) indicates the cutoff region where 
+        there is no longer 95\% confidence that the proportion is true.
+\end{description}
+
+\section*{6.10}
+\begin{description}
+    \item[a)] The percentage of the citizens that categorized their poorly
+        enough to be considered "suffering". (.25)
+    \item[b)] This is a random sample from less than 10\% of the population
+        so the observations can be assumed to be independent. The success-failure
+        condition is also met since 250 and 750 are both well above 10.
+    \item[c)] $\sqrt{\frac{.25*.75}{1000}} * 1.96 +\- .25 = (.2231, .2768)$
+    \item[d)] If we were to use a higher confidence interval the interval would 
+        expand since it would require a higher z score to multiply the standard 
+        error.
+    \item[e)] If we were to use a larger sample the interval would shrink since
+        it would reduce the standard error by a factor of $\frac{1}{\sqrt{n}}$
+\end{description}
+
+\section*{6.15}
+\begin{description}
+    \item[a)] $H_0: p = .38, H_A: p \neq .38$ The sample is less than 10\% of 
+        the population and the success failure conditions are satisfied. Z score
+        is VERY large and p-value is almost 0, meaning that there is almost no chance
+        the null hypothesis is true. This implies that the proportion of US citizens
+        that use their mobile phones to browse the internet is significantly below
+        the proportion of Chinese citizens that use their mobile phones to browse
+        the internet.
+    \item[b)] In this context (for a two tailed test) it represents the probability
+        that the proportion of Chinese citizens that use their mobile phones to browse
+        the internet has almost no chance of being the same as the proportion of 
+        US citizens that use their mobile phones to browse the internet.
+    \item[c)] $\sqrt{\frac{.17*.83}{2254}} * 1.96 +/- .17 = (.1544, .1855)$
+\end{description} 
+
+\section*{6.16}
+\begin{description}
+    \item[a)] $H_0: p = .5, H_A: p < .5$ The sample is less than 10\% of the 
+        population and the success failure conditions are satisfied. Standard error
+        is $\sqrt{\frac{.48*.52}{331}} = .0274$. Z score is .72. This means that
+        we do not reject the null hypothesis, or that there is not enough data 
+        to support the claim that the minority of Americans who chose not to go 
+        to college did so due to financial reasons.
+    \item[b)] It should contain .5 because we were not confident that .5 is 
+        signficantly than the sample proportion.
+\end{description}
+\section*{6.18}
+\begin{description}
+    \item[a)] The sample size is less than 10\% of the population size, and 
+        the failures/successes are both above 10. The 90\% confidence 
+        interval:$.0274 * 1.64 +/- .48 = (.4350, .5249)$. We are 90\% confident
+        that between .435 and .5249 of all students who did not go to university
+        did so due to financial reasons
+    \item[b)] $\sqrt{\frac{.48*.52}{n}} = .015/1.64$, $n = 2984$
+\end{description}
+
+\section*{6.27}
+\begin{description}
+    \item[a)] $\sqrt{\frac{.7*.3}{819} + \frac{.42*.58}{783}} * 1.96 +/- .7 - .
+        42 = (.23, .33)$. We are 95\% confident that the porportion of Democrats
+        who support the health care public option plan in 2009 is 23\% to 33\%
+        higher than the proportion of Independents.
+    \item[b)] True, it is more likely for the Democrat to support it than the
+        Independent
+\end{description}
+
+\section*{6.29}
+\begin{description}
+    \item[a)] College graduates = $\frac{104}{438} = .2374$. Non college grad = 
+        $\frac{131}{389} = .3367$.
+    \item[b)] $H_0: CG = NCG, H_A: CG \neq NCG$. It is most likely that 389 is 
+        less than 10\% of the non college grad population and 438 is also less
+        than the 10\% of the college grad population. Both proportions also
+        satisfy the failure-success criterion. Standard error is $\sqrt{
+        \frac{.2374*(1-.2374)}{438} + \frac{.3367*(1-.3367)}{389}}$. 
+        Z score is $-3.18$ and p-value is $.0014$ so we reject the null 
+        hypothesis. The data supports the conclusion that proportion of 
+        college graduates that are of the opinion that they know enough to 
+        have an educated stance on the issue is greater than the 
+        proportion of non college graduates (p-value is small enough
+        to imply directionality in a one tailed test).
+\end{description}
+
+\section*{6.32}
+\begin{description}
+    \item[a)] All assumptions are met. $H_0: R = D, H_A R \neq D$. 
+        Standard error is $\sqrt{\frac{.83*.17}{318} + \frac{.81*.19}{369}} = 
+        .0293$. $\frac{.83 - .81}{.0293} = .68$. P-value is $.24$. Do not 
+        reject the null hypothesis. The data does not support the conclusion
+        that the proportions are different.
+    \item[b)] Type II error because we would be making the error
+        that despite the null hypothesis being false, we failed to reject it.
+\end{description}
+
+\end{document}
